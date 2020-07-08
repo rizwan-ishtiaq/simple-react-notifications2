@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-notifications",
+  "name": "simple-react-notifications2",
   "version": "1.2.15",
   "description": "Tiny react.js notification library (1kb gzip).",
   "main": "dist/index.js",
@@ -40,13 +40,13 @@
     "error",
     "tiny"
   ],
-  "author": "Alex Permyakov <alex.permyakoff@gmail.com>",
+  "author": "Rizwan Ishtiaq",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexpermyakov/simple-react-notifications.git"
+    "url": "git+https://github.com/rizwan-ishtiaq/simple-react-notifications2.git"
   },
-  "homepage": "https://alexpermyakov.github.io/simple-react-notifications",
+  "homepage": "https://rizwan-ishtiaq.github.io/simple-react-notifications2",
   "devDependencies": {
     "@types/enzyme": "^3.9.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
