@@ -1,26 +1,32 @@
-# Simple-React-Notifications
+# Simple-React-Notifications2
 
 Tiny library (only 1kb gzip) that allows you to add notifications to your app.
 We don't want to blow up our bundle size because of notifications, right?
 
+Forked from https://github.com/alexpermiakov/simple-react-notifications because maintainer didn't had time for fixes/enhancements.
+
 ## Demo
 
-https://alexpermyakov.github.io/simple-react-notifications/
+https://rizwan-ishtiaq.github.io/simple-react-notifications2/
 
 Despite the small size, it supports:
 
-- [Rendering success and error default notifications](#rendering-success-and-error-default-notifications)
-- [Rendering user defined component](#rendering-user-defined-component)
-- [Positioning](#positioning)
-- [Configuring all in one place](#configuring-all-in-one-place)
-- [Animation](#animation)
-- [Remove notification items programmatically](#remove-notification-items-programmatically)
+- [Simple-React-Notifications2](#simple-react-notifications2)
+  - [Demo](#demo)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Rendering success and error default notifications](#rendering-success-and-error-default-notifications)
+    - [Rendering user defined component](#rendering-user-defined-component)
+    - [Positioning](#positioning)
+    - [Configuring all in one place](#configuring-all-in-one-place)
+    - [Animation](#animation)
+    - [Remove notification items programmatically](#remove-notification-items-programmatically)
 
 ## Installation
 
 ```
-$ npm install simple-react-notifications
-$ yarn add simple-react-notifications
+$ npm install simple-react-notifications2
+$ yarn add simple-react-notifications2
 ```
 
 ## Usage
