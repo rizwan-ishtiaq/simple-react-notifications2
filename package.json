@@ -38,7 +38,9 @@
     "react-component",
     "success",
     "error",
-    "tiny"
+    "tiny",
+    "info",
+    "warning"
   ],
   "author": "Rizwan Ishtiaq",
   "license": "MIT",
