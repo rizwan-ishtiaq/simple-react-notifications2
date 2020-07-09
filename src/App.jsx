@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import notifier from "simple-react-notifications";
-import "simple-react-notifications/dist/index.css";
+import notifier from "simple-react-notifications2";
+import "simple-react-notifications2/dist/index.css";
 import { getPrintedCode } from "./utils";
 import GithubIcon from "./GithubIcon";
 
@@ -165,9 +165,9 @@ const App = () => {
   return (
     <>
       <Header>
-        <h1 className="title">Simple React Notifications</h1>
+        <h1 className="title">Simple React Notifications2</h1>
         <h2 className="subtitle">
-          Tiny React.js notification library (1kb gzip).
+          Tiny React.js notification library (1.3kb gzip).
         </h2>
         <GithubIcon />
       </Header>
@@ -230,6 +230,7 @@ const App = () => {
                   value={type}
                 >
                   <option value="success">success</option>
+                  <option value="warn">warning</option>
                   <option value="error">error</option>
                   <option value="info">info</option>
                   <option value="custom">custom</option>

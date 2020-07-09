@@ -3,7 +3,7 @@ import React from "react";
 export default () => (
   <a
     target="_blank"
-    href="https://github.com/alexpermyakov/simple-react-notifications"
+    href="https://github.com/rizwan-ishtiaq/simple-react-notifications2"
     rel="noopener noreferrer"
     className="github-corner"
     aria-label="Open GitHub project"
