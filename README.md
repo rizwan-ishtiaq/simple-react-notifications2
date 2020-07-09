@@ -5,6 +5,8 @@ We don't want to blow up our bundle size because of notifications, right?
 
 Forked from https://github.com/alexpermiakov/simple-react-notifications because maintainer didn't had time for fixes/enhancements.
 
+You can check size from https://arve0.github.io/npm-download-size/ or https://bundlephobia.com/
+
 ## Demo
 
 https://rizwan-ishtiaq.github.io/simple-react-notifications2/

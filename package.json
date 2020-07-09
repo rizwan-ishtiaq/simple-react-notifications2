@@ -1,6 +1,6 @@
 {
   "name": "simple-react-notifications2",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "Tiny react.js notification library (1kb gzip).",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
