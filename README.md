@@ -39,8 +39,8 @@ Notifier has a few built-in components for displaying an error or a successfull 
 
 ```javascript
 import React from "react";
-import notifier from "simple-react-notifications";
-import "simple-react-notifications/dist/index.css";
+import notifier from "simple-react-notifications2";
+import "simple-react-notifications2/dist/index.css";
 
 const App = () => (
   <div>
@@ -228,7 +228,7 @@ You can specify only in or out params as well.
 
 ```javascript
 import React from "react";
-import notifier from "simple-react-notifications";
+import notifier from "simple-react-notifications2";
 
 notifier.configure({
   render: ({ id, onClose }) => (
