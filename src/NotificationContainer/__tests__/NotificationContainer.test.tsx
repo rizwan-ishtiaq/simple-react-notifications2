@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import NotificationContainer from "./NotificationContainer";
+import NotificationContainer from "../NotificationContainer";
 
 describe("<NotificationContainer />", () => {
   it("should render correctly with default props", () => {
