@@ -1,9 +1,6 @@
 #https://medium.com/@mskelton/automated-npm-publishing-using-github-actions-594ef1aaabe2
 name: Test, Publish, & Release
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
