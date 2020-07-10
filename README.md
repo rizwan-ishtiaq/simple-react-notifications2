@@ -1,6 +1,6 @@
 # Simple-React-Notifications2
 
-Tiny library (only 1kb gzip) that allows you to add notifications to your app.
+Tiny library (only 1.3kb gzip - typescript support) that allows you to add notifications to your app.
 We don't want to blow up our bundle size because of notifications, right?
 
 Forked from https://github.com/alexpermiakov/simple-react-notifications because maintainer didn't had time for fixes/enhancements.
