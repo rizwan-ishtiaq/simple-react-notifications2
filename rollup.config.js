@@ -1,23 +1,23 @@
 import typescript from "rollup-plugin-typescript2";
-import commonjs from "rollup-plugin-commonjs";
-import external from "rollup-plugin-peer-deps-external";
-import resolve from "rollup-plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import resolve from "@rollup/plugin-node-resolve";
 import bundleSize from "rollup-plugin-bundle-size";
 import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
-import pkg from "./package.json";
+const packageJson = require("./package.json");
 
 export default {
   input: "src/index.tsx",
   output: [
     {
-      file: pkg.main,
+      file: packageJson.main,
       format: "cjs",
       exports: "named",
       sourcemap: false
     },
     {
-      file: pkg.module,
+      file: packageJson.module,
       format: "es",
       exports: "named",
       sourcemap: false
@@ -25,25 +25,15 @@ export default {
   ],
   external: ["react", "react-dom"],
   plugins: [
-    external(),
+    peerDepsExternal(),
     resolve(),
-    typescript({
-      rollupCommonJSResolveHack: true,
-      exclude: "**/__tests__/**",
-      clean: true
-    }),
-    commonjs({
-      include: ["node_modules/**"],
-      namedExports: {
-        "node_modules/react/react.js": [
-          "Children",
-          "Component",
-          "PropTypes",
-          "createElement"
-        ],
-        "node_modules/react-dom/index.js": ["render"]
-      }
-    }),
+    typescript(
+      {
+        useTsconfigDeclarationDir: true,
+        exclude: ["**/__tests__/**", "src/setupTests.ts"],
+        clean: true
+      }),
+    commonjs(),
     postcss({
       extract: true,
       minimize: true

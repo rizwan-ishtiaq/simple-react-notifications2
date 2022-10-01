@@ -1,22 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "es2017"],
-    "jsx": "react",
     "outDir": "dist",
-    "strict": true,
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitThis": false,
-    "strictNullChecks": true,
-    "typeRoots": ["node_modules/@types"],
-    "types": ["node", "jest"],
     "allowSyntheticDefaultImports": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "declaration": true
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "dist"
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

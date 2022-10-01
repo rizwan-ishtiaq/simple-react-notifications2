@@ -160,7 +160,7 @@ export default (props: Config & { id: number; cleared: () => void }) => {
       onMouseLeave: () => f("resume")
     };
 
-    const f = (action: string) => {
+    const f = (action: Exclude<keyof Timer, "remaining">) => {
       props.pauseOnHover && timers[id] && timers[id][action]();
       setHovered(action === "pause");
     };
@@ -199,5 +199,5 @@ export default (props: Config & { id: number; cleared: () => void }) => {
     );
   }, [props]);
 
-  return <>{...items.current}</>;
+  return <>{[...items.current]}</>;
 };

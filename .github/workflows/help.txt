@@ -1,3 +1,4 @@
+#https://medium.com/soulweb-academy/easily-build-and-publish-a-react-typescript-component-library-package-to-npm-using-storybook-and-4836d4f700b6
 Commit changes
 create a tag with version number
 git tag 1.2.16
